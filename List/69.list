@@ -1,0 +1,43 @@
+############################################
+# 广点通（优量汇）+ 穿山甲（字节跳动）广告屏蔽
+############################################
+
+[filter_local]
+
+# --- 广点通 Tencent GDT / Beacon ---
+HOST-WILDCARD, access*.tpns.tencent.com, reject
+HOST, astrategy.beacon.qq.com, reject
+HOST, aeventlog.beacon.qq.com, reject
+HOST, oth.eve.mdt.qq.com, reject
+HOST, oth.eve.qq.com, reject
+HOST, access.toggle.qq.com, reject
+HOST, game.weixin.qq.com, reject
+HOST, wxsnsdythumb.wxs.qq.com, reject
+HOST, wxsnsdy.wxs.qq.com, reject
+
+# --- 字节跳动穿山甲 Pangolin / Pangle ---
+HOST, ug.snssdk.com, reject
+HOST-WILDCARD, v*-be-pack.pglstatp-toutiao.com, reject
+HOST-WILDCARD, sf*-be-pack.pglstatp-toutiao.com, reject
+HOST, toblapplog.volceapplog.com, reject
+HOST-WILDCARD, access.pangolin-sdk-toutiao-*.com, reject
+HOST-WILDCARD, api-access.pangolin-sdk-toutiao-*.com, reject
+HOST, mssdk-bu.snssdk.com, reject
+HOST, aaid.umeng.com, reject
+HOST, ulogs.umengcloud.com, reject
+HOST, i.snssdk.com, reject
+HOST, is.snssdk.com, reject
+HOST, pangolin.snssdk.com, reject
+HOST, extlog.snssdk.com, reject
+HOST, bds.snssdk.com, reject
+HOST, dig.bdurl.net, reject
+HOST, api-access.pangolin-sdk-toutiao.com, reject
+HOST, sf3-ttcdn-tos.pstatp.com, reject
+HOST-WILDCARD, sf*-fe-tos.pglstatp-toutiao.com, reject
+HOST-WILDCARD, s*-fe-scm.pglstatp-toutiao.com, reject
+HOST-WILDCARD, s*a.pstatp.com, reject
+HOST-WILDCARD, log-api.pangolin-sdk-toutiao-*.com, reject
+HOST, sf6-be-pack.pglstatp-toutiao.com, reject
+
+# 不需要解析的内网域名
+HOST-SUFFIX, in-addr.arpa, reject
